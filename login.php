@@ -1,22 +1,25 @@
 <?php
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $email = $_POST["email"];
-    $password = $_POST["password"];
 
-   
-    if (empty($email) || empty($password)) {
-        header("Location: login.html");
-        exit();
+$email = $_POST['email'] ?? '';
+$password = $_POST['password'] ?? '';
+
+
+$valid_email = 'g221210575@ogr.sakarya.edu.tr';
+$valid_password = 'g221210575';
+
+if (!empty($email) && !empty($password)) {
+    
+    if ($email === $valid_email && $password === $valid_password) {
+        $username = explode('@', $email)[0];
+        echo "<b>Hoşgeldiniz $username</b><br>";
+        echo "<p><a href='index.html'>&lt;Hakkimda sayfasina git&gt;</a></p>";
+    } else {
+        echo "Bilgileriniz Hatalı. Lütfen tekrar deneyin.<br>";
+        echo "<p><a href='login.html'>&lt;GERİ DÖN&gt;</a></p>";
     }
 
-    
-    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        header("Location: login.html"); 
-        exit();
-    }
-
-    
-    header("Location: giris.php?email=" . urlencode($email));
-    exit();
+} else {
+    echo "Eksik bilgi girdiniz. Lütfen tüm alanları doldurun.<br>";
+    echo "<p><a href='login.html'>&lt;GERİ DÖN&gt;</a></p>";
 }
 ?>
