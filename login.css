@@ -1,0 +1,113 @@
+body{
+
+    background-color:cornflowerblue;
+}
+
+form {
+    border: 2px  #f1f1f1;
+    border-radius: 2px;
+    padding: 50px;
+    width: 50%;
+    margin: 0 auto;
+    background-color:white;
+    
+  }
+.giriş-email{
+  width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+  h2{
+
+    text-align: center;
+  }
+
+  button {
+    background-color:deepskyblue;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+
+  button:hover {
+    opacity: 0.8;
+  }
+
+  .container {
+    padding: 30px;
+  }
+
+  .error {
+    color: #FF0000;
+  }
+
+  header ul li {
+    list-style-type: none;
+    display: inline-block;
+    letter-spacing: 1px;
+    margin: 7px 7px;
+    
+    }
+    header ul li a{
+        color: gold;
+        text-decoration: none;
+        transition: 0.4s;
+    
+    }
+    div ul li a:hover{
+        color: red;
+    }
+    .btn{
+        text-decoration: none;
+        background-color:cadetblue;
+        color:gold;
+        font-weight: bold;
+        padding: 5px 10px;
+        border-radius: 30px;
+        transition: 0.4s;
+        border: 2px solid transparent;
+    }
+    .btn:hover{
+        background-color: transparent;
+        border: 2px solid crimson;
+    }
+
+    
+h2{
+    font-size: 20px;
+    color: gold;
+    letter-spacing: 3px;
+    cursor:pointer;
+    margin-left: 3px;
+
+}
+header{
+    padding-top: 20px;
+    padding-left: 5%;
+    padding-right:3%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+  /* Ekran genişliği 600px'e kadar olan cihazlar için stil tanımları */
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  /* Ekran genişliği 601px ile 1024px arasındaki cihazlar için stil tanımları */
+}
+
+@media only screen and (min-width: 1025px) {
+  /* Ekran genişliği 1025px ve üzeri olan cihazlar için stil tanımları */
+}
